@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Innocent William - Food & Nutrition Project</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffaf0;
+      color: #333;
+    }
+    header {
+      background: #3e8e41;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+    }
+    section {
+      padding: 40px;
+    }
+    .container {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .images img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #3e8e41;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #56a75e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Innocent William</h1>
+    <p>"Healthy living starts with what you eat"</p>
+  </header>
+
+  <section class="container">
+    <h2>About the Project</h2>
+    <p>The Innocent William Food & Nutrition Project aims to educate communities and individuals about the importance of balanced diets, food safety, and proper nutrition. Our goal is to empower people to live healthier lives by making informed food choices.</p>
+  </section>
+
+  <section class="container">
+    <h2>Nutritional Facts</h2>
+    <ul>
+      <li>Carbohydrates are the body's main energy source.</li>
+      <li>Proteins help build and repair body tissues.</li>
+      <li>Fats provide energy and help absorb vitamins.</li>
+      <li>Vitamins and minerals are essential for various bodily functions.</li>
+      <li>Water is vital for digestion, absorption, and overall hydration.</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Healthy Recipes</h2>
+    <ul>
+      <li><strong>Fruit Smoothie:</strong> Blend bananas, strawberries, milk, and honey.</li>
+      <li><strong>Veggie Stir-fry:</strong> Mix broccoli, carrots, bell peppers with olive oil and soy sauce.</li>
+      <li><strong>Oats & Nuts:</strong> A nutritious breakfast of oats, almonds, and raisins.</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Food Education</h2>
+    <p>Learning about food labels, understanding food groups, and knowing how to safely prepare meals are key parts of food education. We provide workshops, handouts, and online resources to help our audience make smarter decisions around food and health.</p>
+  </section>
+
+  <section class="container">
+    <h2>Gallery</h2>
+    <div class="images">
+      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Healthy food">
+      <img src="https://images.unsplash.com/photo-1603046891423-7c61d72bb6f2" alt="Nutrition class">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Cooking session">
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:innocentnutrition@gmail.com">innocentnutrition@gmail.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+  </section>
+
+  
+<section class="container">
+  <h2>Leave a Comment</h2>
+  <p>We’d love to hear your thoughts, feedback, or questions!</p>
+  <form>
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:10px;"><br>
+
+    <label for="email">Your Email (optional):</label><br>
+    <input type="email" id="email" name="email" style="width:100%; padding:10px; margin-bottom:10px;"><br>
+
+    <label for="comment">Your Comment:</label><br>
+    <textarea id="comment" name="comment" placeholder="Write your comment here..." required></textarea><br>
+
+    <button type="submit">Submit</button>
+  </form>
+  <p id="thanksMessage" style="display:none; color:green;">Thank you for your comment!</p>
+</section>
+
+<script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("thanksMessage").style.display = "block";
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
